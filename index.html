@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OLOREA — Perfumar el silencio | Difusores de autor</title>
+<meta name="description" content="Olorea. Difusores de autor para transformar el aire en presencia — diseñados a mano en Guatemala.">
+<link rel="canonical" href="https://soyolorea.com/">
+<meta name="theme-color" content="#15130F">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://soyolorea.com/">
+<meta property="og:site_name" content="Olorea">
+<meta property="og:title" content="OLOREA — Perfumar el silencio">
+<meta property="og:description" content="Difusores de autor para transformar el aire en presencia — diseñados a mano en Guatemala.">
+<meta property="og:image" content="https://soyolorea.com/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_GT">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OLOREA — Perfumar el silencio">
+<meta name="twitter:description" content="Difusores de autor para transformar el aire en presencia — diseñados a mano en Guatemala.">
+<meta name="twitter:image" content="https://soyolorea.com/assets/img/og-image.jpg">
+
+<!-- Favicons -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<!-- Performance: connect early to the origins we actually fetch from -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="preload" as="image" href="assets/img/hero-poster.jpg">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="container">
+    <a href="#top" class="brand">
+      <img class="brand-logo" src="assets/img/logo-nav.png" alt="Olorea" width="623" height="788">
+    </a>
+    <nav class="links">
+      <a href="#coleccion">Colección</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#ritual">Ritual</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div id="mobileMenu" style="position:fixed;inset:0;background:rgba(21,19,15,.98);z-index:99;display:none;flex-direction:column;align-items:center;justify-content:center;gap:34px;">
+  <a href="#coleccion" style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--cream);">Colección</a>
+  <a href="#nosotros" style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--cream);">Nosotros</a>
+  <a href="#ritual" style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--cream);">Ritual</a>
+  <a href="#contacto" style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--cream);">Contacto</a>
+  <button id="closeMenu" style="margin-top:20px;background:none;border:1px solid var(--gold);color:var(--gold-light);padding:10px 24px;letter-spacing:.2em;font-size:11px;text-transform:uppercase;">Cerrar</button>
+</div>
+
+<!-- ===== HERO: scroll-driven reveal, logo -> mark -> bottle ===== -->
+<section class="hero-pin" id="top">
+  <div class="hero-sticky" id="heroSticky">
+    <div class="hero-frame" id="heroFrame">
+      <video
+        id="heroVideo"
+        class="hero-video"
+        muted
+        playsinline
+        webkit-playsinline="true"
+        preload="auto"
+        poster="assets/img/hero-poster.jpg"
+      >
+        <source src="assets/video/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero-light-sweep" id="lightSweep"></div>
+      <div class="hero-vignette"></div>
+    </div>
+
+    <div class="hero-copy" id="heroCopy">
+      <span class="eyebrow">Difusores de autor</span>
+      <h1>El lujo también<br>se respira</h1>
+      <p class="tagline">Perfumar el silencio: aromas de autor que transforman el aire de tu casa en una memoria &mdash; diseñados para durar en el tiempo, y en el recuerdo.</p>
+      <a href="#coleccion" class="btn btn-light">Descubre la colección</a>
+    </div>
+
+    <div class="scroll-cue" id="scrollCue"><span class="line"></span>Scroll para descubrir</div>
+  </div>
+</section>
+
+<section class="collection" id="coleccion">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">La colección</span>
+      <h2>Difusores hechos<br>para durar</h2>
+      <p>Seis siluetas, un mismo propósito: perfumar el aire con precisión y silencio. (Las fragancias de cada modelo se agregarán muy pronto.)</p>
+    </div>
+
+    <div class="cards">
+      <div class="cards-row">
+        <div class="card reveal">
+          <div class="photo"><img src="assets/img/product-waterless-white.jpg" alt="Olorea Luxury Waterless Diffuser — Blanco" width="900" height="675" loading="lazy"></div>
+          <span class="num">N.º 01</span>
+          <h3>Luxury Waterless Diffuser — Blanco</h3>
+          <p>Nuestra pieza insignia en acabado blanco mate. Difusión ultrasónica sin agua, 34.2 cm de alto — presencia esbelta para consolas y entradas.</p>
+          <div class="row">
+            <span class="price">Q1500.00</span>
+            <a href="https://wa.me/50252020252?text=Hola%2C%20me%20interesa%20el%20Luxury%20Waterless%20Diffuser%20%E2%80%94%20Blanco%20de%20Olorea.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="link">Consultar</a>
+          </div>
+        </div>
+
+        <div class="card reveal delay-1">
+          <div class="photo"><img src="assets/img/product-waterless-black.jpg" alt="Olorea Luxury Waterless Diffuser — Negro" width="900" height="600" loading="lazy"></div>
+          <span class="num">N.º 02</span>
+          <h3>Luxury Waterless Diffuser — Negro</h3>
+          <p>La misma silueta insignia en negro mate. Difusión ultrasónica sin agua, 34.2 cm de alto — contraste escultural para cocinas y espacios contemporáneos.</p>
+          <div class="row">
+            <span class="price">Q1500.00</span>
+            <a href="https://wa.me/50252020252?text=Hola%2C%20me%20interesa%20el%20Luxury%20Waterless%20Diffuser%20%E2%80%94%20Negro%20de%20Olorea.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="link">Consultar</a>
+          </div>
+        </div>
+
+        <div class="card reveal delay-2">
+          <div class="photo"><img src="assets/img/product-waterless-gold.jpg" alt="Olorea Luxury Waterless Diffuser — Dorado" width="900" height="600" loading="lazy"></div>
+          <span class="num">N.º 03</span>
+          <h3>Luxury Waterless Diffuser — Dorado</h3>
+          <p>La misma silueta insignia en acabado dorado cepillado. Difusión ultrasónica sin agua, 34.2 cm de alto — un toque cálido para salas y espacios de estar.</p>
+          <div class="row">
+            <span class="price">Q1500.00</span>
+            <a href="https://wa.me/50252020252?text=Hola%2C%20me%20interesa%20el%20Luxury%20Waterless%20Diffuser%20%E2%80%94%20Dorado%20de%20Olorea.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="link">Consultar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards-row">
+        <div class="card reveal">
+          <div class="photo"><img src="assets/img/product-wallplug-white.jpg" alt="Olorea Wall Plug Diffuser" width="900" height="720" loading="lazy"></div>
+          <span class="num">N.º 04</span>
+          <h3>Wall Plug Diffuser</h3>
+          <p>Se conecta directo al tomacorriente y perfuma discretamente pasillos, baños y espacios pequeños — presencia mínima, aroma constante.</p>
+          <div class="row">
+            <span class="price">Q800.00</span>
+            <a href="https://wa.me/50252020252?text=Hola%2C%20me%20interesa%20el%20Wall%20Plug%20Diffuser%20de%20Olorea.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="link">Consultar</a>
+          </div>
+        </div>
+
+        <div class="card reveal delay-1">
+          <div class="photo"><img src="assets/img/product-wallplug-black.jpg" alt="Olorea Wall Plug Diffuser – Black Edition" width="900" height="720" loading="lazy"></div>
+          <span class="num">N.º 05</span>
+          <h3>Wall Plug Diffuser — Black Edition</h3>
+          <p>El mismo formato de tomacorriente, en acabado negro mate. Discreto durante el día, escultural bajo la luz de la noche.</p>
+          <div class="row">
+            <span class="price">Q850.00</span>
+            <a href="https://wa.me/50252020252?text=Hola%2C%20me%20interesa%20el%20Wall%20Plug%20Diffuser%20%E2%80%94%20Black%20Edition%20de%20Olorea.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="link">Consultar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards-row">
+        <div class="card reveal">
+          <div class="photo"><img src="assets/img/product-smart-aroma.jpg" alt="Olorea Smart Aroma Diffuser – Black Edition" width="700" height="793" loading="lazy"></div>
+          <span class="num">N.º 06</span>
+          <h3>Smart Aroma Diffuser — Black Edition</h3>
+          <p>Control táctil, autonomía prolongada y una silueta pensada para mesas y consolas — el cierre perfecto de la colección.</p>
+          <div class="row">
+            <span class="price">Q1200.00</span>
+            <a href="https://wa.me/50252020252?text=Hola%2C%20me%20interesa%20el%20Smart%20Aroma%20Diffuser%20%E2%80%94%20Black%20Edition%20de%20Olorea.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="link">Consultar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fragrances">
+  <div class="dot-watermark"></div>
+  <div class="container inner reveal">
+    <span class="eyebrow">Próxima etapa</span>
+    <h2>Nuestras fragancias</h2>
+    <p>Estamos afinando cada composición olfativa junto a nuestros perfumistas. Muy pronto podrás descubrir el nombre, las notas y la historia detrás de cada aroma Olorea.</p>
+    <span class="soon">Próximamente</span>
+  </div>
+</section>
+
+<section class="philosophy" id="nosotros">
+  <div class="dot-watermark"></div>
+  <div class="container grid">
+    <div class="reveal">
+      <span class="eyebrow">Sobre nosotros</span>
+      <h2>El lujo no se ve.<br>Se respira.</h2>
+      <p>Olorea nace de la obsesión por lo esencial: esencias puras, maderas nobles y una composición olfativa que evoluciona con las horas del día. No vendemos fragancias &mdash; diseñamos atmósferas que se convierten en la firma invisible de un espacio.</p>
+      <br>
+      <p>Elaborados en pequeños lotes, cada frasco es soplado y numerado a mano, pensado para acompañar tu casa durante meses, no días.</p>
+    </div>
+    <div class="art reveal delay-1">
+      <img src="assets/img/logo-mark.png" alt="Sello Olorea" width="623" height="623" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="ritual" id="ritual">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">El ritual</span>
+      <h2>Tres pasos hacia<br>la presencia</h2>
+      <p>Usar un difusor Olorea es un pequeño acto de cuidado. Así se vive el ritual completo.</p>
+    </div>
+    <div class="steps" id="stepsBlock">
+      <svg class="connector"><line x1="0" y1="1" x2="100%" y2="1"/></svg>
+      <div class="step reveal">
+        <div class="n">01</div>
+        <h3>Elige tu atmósfera</h3>
+        <p>Selecciona el difusor según el espacio y el momento del día que quieres transformar.</p>
+      </div>
+      <div class="step reveal delay-1">
+        <div class="n">02</div>
+        <h3>Coloca los reeds</h3>
+        <p>Invierte las varillas cada 5&ndash;7 días para renovar la intensidad del aroma en el ambiente.</p>
+      </div>
+      <div class="step reveal delay-2">
+        <div class="n">03</div>
+        <h3>Habita el espacio</h3>
+        <p>Deja que el aroma se vuelva parte de la memoria de tu casa, sin prender ni apagar nada.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Voces</span>
+      <h2>Lo que dicen<br>quienes ya lo viven</h2>
+    </div>
+    <div class="t-grid">
+      <div class="t-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Entras a mi sala y lo primero que notas es el aroma. Todo el mundo pregunta qué es."</p>
+        <div class="who">— Valentina R.</div>
+      </div>
+      <div class="t-card reveal delay-1">
+        <div class="stars">★★★★★</div>
+        <p>"El frasco solo ya es una pieza de decoración. La fragancia dura muchísimo más que otras marcas."</p>
+        <div class="who">— Diego M.</div>
+      </div>
+      <div class="t-card reveal delay-2">
+        <div class="stars">★★★★★</div>
+        <p>"Se volvió el olor de mi estudio. Es casi parte de mi identidad ahora."</p>
+        <div class="who">— Ana Lucía P.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="dot-watermark"></div>
+  <div class="container grid">
+    <div class="reveal">
+      <span class="eyebrow">Contacto</span>
+      <h2>Hablemos de tu<br>próxima atmósfera</h2>
+      <p class="lead">¿Tienes dudas sobre la colección, quieres un pedido personalizado o comprar al por mayor? Escríbenos.</p>
+      <div class="contact-info">
+        <a href="https://wa.me/50252020252" target="_blank" rel="noopener">+502 5202 0252 — WhatsApp</a>
+        <a href="mailto:info@soyolorea.com">info@soyolorea.com</a>
+        <a href="#">Ciudad de Guatemala, Guatemala</a>
+      </div>
+      <div class="social">
+        <a href="#" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" target="_blank" rel="noopener">Pinterest</a>
+        <a href="#" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+    <div class="reveal delay-1">
+      <form id="contactForm">
+        <input type="hidden" name="access_key" value="8083f1bd-d917-4a27-961c-7c03b25798b4">
+        <input type="hidden" name="subject" value="Nuevo mensaje desde soyolorea.com">
+        <input type="text" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+        <div class="field"><input type="text" name="name" placeholder="Nombre" required></div>
+        <div class="field"><input type="email" name="email" placeholder="Correo electrónico" required></div>
+        <div class="field"><textarea name="message" placeholder="Escribe tu pregunta o mensaje..." required></textarea></div>
+        <button type="submit" class="btn btn-light" style="align-self:flex-start;">Enviar mensaje</button>
+        <div class="form-msg" id="formMsg"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <span class="fl">
+      <svg class="mark" viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="4" fill="var(--gold)"/>
+        <circle cx="20" cy="10" r="1.6" fill="var(--gold)"/>
+        <circle cx="20" cy="30" r="1.6" fill="var(--gold)"/>
+        <circle cx="10" cy="20" r="1.6" fill="var(--gold)"/>
+        <circle cx="30" cy="20" r="1.6" fill="var(--gold)"/>
+        <circle cx="13" cy="13" r="1.4" fill="var(--gold-light)"/>
+        <circle cx="27" cy="13" r="1.4" fill="var(--gold-light)"/>
+        <circle cx="13" cy="27" r="1.4" fill="var(--gold-light)"/>
+        <circle cx="27" cy="27" r="1.4" fill="var(--gold-light)"/>
+      </svg>
+      OLOREA
+    </span>
+    <span class="fr">© <span id="year"></span> Olorea. Todos los derechos reservados.</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/50252020252" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.5h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.3 0 1.4 1 2.7 1.1 2.9.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3 0-.1-.2-.2-.4-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.3c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3.3.9.9-3.2-.2-.3C3.8 15 3.3 13.5 3.3 12c0-4.8 3.9-8.7 8.7-8.7s8.7 3.9 8.7 8.7-3.9 8.6-8.7 8.6z"/></svg>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
