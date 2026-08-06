@@ -85,7 +85,6 @@
 
     // lightweight UI reactions — fine to update directly, they're not the video
     lightSweep.style.opacity = String(0.1 + p * 0.16);
-    scrollCue.style.opacity = String(1 - mapRange(p, 0, 0.08));
   }
 
   let ticking = false;
