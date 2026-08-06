@@ -66,4 +66,4 @@ El formulario de contacto envía los mensajes mediante [Web3Forms](https://web3f
 
 ## WhatsApp
 
-Los botones de WhatsApp abren conversaciones al número `+502 5202 0252` con mensajes prellenados según el producto. Si el número cambia, se puede actualizar buscando `wa.me/50252020252` en `index.html` y reemplazando el número en cada enlace.
+Los botones de WhatsApp abren conversaciones al número `+502 3031 2691` con mensajes prellenados según el producto. Si el número cambia, se puede actualizar buscando `wa.me/50230312691` en `index.html` y reemplazando el número en cada enlace.
