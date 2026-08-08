@@ -22,13 +22,6 @@
   }, { threshold: 0.15 });
   revealEls.forEach(el => io.observe(el));
 
-  // ritual connecting line draw-in
-  const stepsBlock = document.getElementById('stepsBlock');
-  const stepsIo = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { stepsBlock.classList.add('in-view'); stepsIo.unobserve(stepsBlock); } });
-  }, { threshold: 0.3 });
-  stepsIo.observe(stepsBlock);
-
   // ---- cinematic hero: fullscreen video, pinned for ~300vh, playback locked to scroll. ----
   // The video never autoplays — it stays paused and only ever advances because this script
   // moves it. Scroll position is sampled into a target progress value; the actual
