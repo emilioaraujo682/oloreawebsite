@@ -41,13 +41,33 @@
   let targetProgress = 0; // written only by scroll/resize — never touches currentTime
   let smoothTime = 0;     // eased currentTime, advanced only inside the rAF loop below
 
+  let heroVideoFailed = false;
+  // Bulletproof fallback: if the video ever fails to load/decode, or simply never becomes
+  // playable in time (blocked autoplay, slow/limited connection, an unsupported device),
+  // hide it so the poster image underneath (always present, never dependent on the video)
+  // shows instead — this guarantees the hero is never a plain black area.
+  function showHeroFallback(){
+    if (heroVideoFailed) return;
+    heroVideoFailed = true;
+    heroVideo.classList.add('hero-video--failed');
+    clearInterval(readyPoll);
+    clearTimeout(fallbackTimer);
+  }
+  heroVideo.addEventListener('error', showHeroFallback);
+  heroVideo.querySelectorAll('source').forEach(s => s.addEventListener('error', showHeroFallback));
+  // Safety net: some failure modes (stalled network, blocked autoplay with no fired 'error'
+  // event) never resolve on their own — if the video isn't playable within a few seconds,
+  // treat it as failed too rather than leaving a black area indefinitely.
+  const fallbackTimer = setTimeout(() => { if (!videoReady) showHeroFallback(); }, 6000);
+
   function markVideoReady(){
-    if (videoReady) return;
+    if (videoReady || heroVideoFailed) return;
     videoDuration = heroVideo.duration || 0;
     if (!(videoDuration > 0)) return;
     videoReady = true;
     heroVideo.pause();
     heroVideo.currentTime = 0;
+    clearTimeout(fallbackTimer);
   }
   heroVideo.pause();
   // iOS Safari won't render seeked frames until the video has been "played" at least once —
@@ -65,7 +85,7 @@
   let readyPollTries = 0;
   const readyPoll = setInterval(() => {
     readyPollTries++;
-    if (videoReady || readyPollTries > 40) { clearInterval(readyPoll); return; }
+    if (videoReady || heroVideoFailed || readyPollTries > 40) { clearInterval(readyPoll); return; }
     if (heroVideo.readyState >= 1) markVideoReady();
   }, 50);
 
